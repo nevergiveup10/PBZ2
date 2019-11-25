@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="386.00007792968245" prefWidth="530.9998779296875" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ParkZoneDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="table" layoutX="29.0" layoutY="36.0" prefHeight="200.0" prefWidth="470.0">
+      <columns>
+        <TableColumn fx:id="col1" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" resizable="true" text="ID" />
+        <TableColumn fx:id="col2" editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="203.0" resizable="true" text="Парк" />
+        <TableColumn fx:id="col3" maxWidth="5000.0" minWidth="10.0" prefWidth="167.0" resizable="true" text="Зоны" />
+      </columns>
+    </TableView>
+    <HBox layoutX="29.0" layoutY="246.0" prefHeight="22.0" prefWidth="470.0">
+      <children>
+        <TextField fx:id="park" prefHeight="31.0" prefWidth="242.0" text="Парк" />
+        <TextField fx:id="zone" prefHeight="31.0" prefWidth="275.0" text="Зона" />
+          <Button mnemonicParsing="false" onAction="#saveTable" prefHeight="31.0" prefWidth="185.0" text="Добавить" />
+      </children>
+    </HBox>
+    <HBox layoutX="31.0" layoutY="283.0" prefHeight="21.0" prefWidth="470.0">
+      <children>
+        <TextField fx:id="id" prefWidth="363.0" text="ID" />
+        <Button mnemonicParsing="false" onAction="#delete" prefWidth="112.0" text="Удалить" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

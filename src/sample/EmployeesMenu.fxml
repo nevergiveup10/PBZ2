@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="334.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeesDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="table" layoutX="29.0" layoutY="36.0" prefHeight="200.0" prefWidth="680.0">
+      <columns>
+        <TableColumn fx:id="col1" maxWidth="5000.0" minWidth="10.0" prefWidth="49.0" resizable="true" text="ID" />
+        <TableColumn fx:id="col2" maxWidth="5000.0" minWidth="10.0" prefWidth="192.0" resizable="true" text="ФИО" />
+        <TableColumn fx:id="col3" editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="169.0" resizable="true" text="Телефон" />
+        <TableColumn fx:id="col4" maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="Адрес" />
+        <TableColumn fx:id="col5" maxWidth="5000.0" minWidth="10.0" prefWidth="141.0" text="График работы" />
+      </columns>
+    </TableView>
+    <HBox layoutX="29.0" layoutY="246.0" prefHeight="22.0" prefWidth="680.0">
+      <children>
+        <TextField fx:id="fullName" prefWidth="164.0" text="ФИО" />
+        <TextField fx:id="number" prefWidth="123.0" text="Телефон" />
+        <TextField fx:id="address" prefWidth="110.0" text="Адрес" />
+        <TextField fx:id="schedule" prefHeight="25.0" prefWidth="172.0" text="График работы" />
+        <Button mnemonicParsing="false" onAction="#saveTable" prefWidth="110.0" text="Добавить" />
+      </children>
+    </HBox>
+    <HBox layoutX="31.0" layoutY="283.0" prefHeight="21.0" prefWidth="677.0">
+      <children>
+        <TextField fx:id="idDel" prefWidth="568.0" text="ID" />
+        <Button mnemonicParsing="false" onAction="#delete" prefWidth="112.0" text="Удалить" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

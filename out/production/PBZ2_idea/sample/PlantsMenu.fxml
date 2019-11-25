@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="386.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlantsDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+      <HBox layoutX="29.0" layoutY="277.0" prefHeight="31.0" prefWidth="458.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="49.0" text="Парк:" />
+            <ChoiceBox fx:id="parkId" prefHeight="31.0" prefWidth="176.0" />
+            <Label prefHeight="21.0" prefWidth="45.0" text="Зона:" />
+            <ChoiceBox fx:id="zone" prefHeight="31.0" prefWidth="189.0" />
+         </children>
+      </HBox>
+    <TableView fx:id="table" layoutX="29.0" layoutY="36.0" prefHeight="200.0" prefWidth="615.0">
+      <columns>
+        <TableColumn fx:id="col1" maxWidth="5000.0" minWidth="10.0" prefWidth="49.0" resizable="true" text="ID" />
+        <TableColumn fx:id="col2" maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" resizable="true" text="Вид" />
+        <TableColumn fx:id="col3" editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" resizable="true" text="Дата высадки" />
+        <TableColumn fx:id="col4" maxWidth="5000.0" minWidth="10.0" prefWidth="105.0" text="Возраст" />
+            <TableColumn fx:id="col5" prefWidth="100.0" text="ID Парка" />
+            <TableColumn fx:id="col6" prefWidth="114.0" text="Номер зоны" />
+      </columns>
+    </TableView>
+    <HBox layoutX="29.0" layoutY="246.0" prefHeight="31.0" prefWidth="615.0">
+      <children>
+        <TextField fx:id="type" prefHeight="31.0" prefWidth="120.0" text="Вид" />
+            <DatePicker fx:id="plantDate" prefHeight="31.0" prefWidth="229.0" />
+        <TextField fx:id="age" prefHeight="31.0" prefWidth="108.0" text="Возраст" />
+          <Button mnemonicParsing="false" onAction="#saveTable" prefHeight="31.0" prefWidth="159.0" text="Добавить" />
+      </children>
+    </HBox>
+    <HBox layoutX="29.0" layoutY="310.0" prefHeight="31.0" prefWidth="623.0">
+      <children>
+        <TextField fx:id="idDel" prefHeight="31.0" prefWidth="458.0" text="ID" />
+        <Button mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="165.0" text="Удалить" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

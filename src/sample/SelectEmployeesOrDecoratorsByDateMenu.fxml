@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectEmployeesOrDecoratorsByDateDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="table" layoutX="31.0" layoutY="38.0" prefHeight="200.0" prefWidth="603.0">
+      <columns>
+        <TableColumn fx:id="col1" maxWidth="5000.0" minWidth="10.0" prefWidth="84.0" text="Статус" />
+        <TableColumn fx:id="col2" maxWidth="5000.0" minWidth="10.0" prefWidth="144.0" text="ФИО" />
+        <TableColumn fx:id="col3" maxWidth="5000.0" minWidth="10.0" prefWidth="185.0" text="Адрес" />
+        <TableColumn fx:id="col4" maxWidth="5000.0" minWidth="10.0" prefWidth="189.0" text="Телефон" />
+      </columns>
+    </TableView>
+    <Button layoutX="361.0" layoutY="257.0" mnemonicParsing="false" onAction="#getEmployeesByDate" prefWidth="264.0" text="Поиск" />
+      <DatePicker fx:id="plantDate" layoutX="68.0" layoutY="257.0" prefHeight="25.0" prefWidth="224.0" />
+  </children>
+</AnchorPane>

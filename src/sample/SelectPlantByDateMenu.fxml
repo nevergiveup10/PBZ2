@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="397.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectPlantByDateDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="table" layoutX="31.0" layoutY="38.0" prefHeight="200.0" prefWidth="660.0">
+      <columns>
+        <TableColumn fx:id="col1" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="ID" />
+        <TableColumn fx:id="col2" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Вид" />
+            <TableColumn fx:id="col3" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Возраст" />
+        <TableColumn fx:id="col4" maxWidth="5000.0" minWidth="10.0" prefWidth="130.0" text="День полива" />
+        <TableColumn fx:id="col5" maxWidth="5000.0" minWidth="10.0" prefWidth="108.0" text="Время полива" />
+        <TableColumn fx:id="col6" maxWidth="5000.0" minWidth="10.0" prefWidth="143.0" text="Кол-во воды (литров)" />
+      </columns>
+    </TableView>
+    <TextField fx:id="type" layoutX="37.0" layoutY="282.0" prefWidth="253.0" text="Вид" />
+    <Button layoutX="371.0" layoutY="282.0" mnemonicParsing="false" onAction="#getPlantsAndWateringPlan" prefWidth="264.0" text="Поиск" />
+    <Label layoutX="37.0" layoutY="327.0" text="Текущаяя дата:" />
+      <Label fx:id="dateLabel" layoutX="130.0" layoutY="327.0" text="0" />
+  </children>
+</AnchorPane>

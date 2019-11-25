@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="b" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="479.0000999999975" scaleX="1.0" scaleY="1.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <!-- TODO Add Nodes -->
+  <children>
+      <ImageView fitHeight="558.0" fitWidth="464.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/HP/Pictures/stat.jpg" />
+         </image>
+      </ImageView>
+    <VBox layoutX="65.0" layoutY="86.0" prefHeight="326.0" prefWidth="350.0" spacing="10.0">
+      <children>
+        <Button fx:id="manageFirmsButton" minHeight="17.0" mnemonicParsing="false" onAction="#click" prefHeight="34.0" prefWidth="350.0" text="Управление информацией о фирме" />
+        <Button fx:id="manageZoneParksButton" minHeight="17.0" mnemonicParsing="false" onAction="#click2" prefHeight="33.0" prefWidth="350.0" text="Управление инф. о зонах и парках" />
+        <Button fx:id="managePlantsButton" minHeight="17.0" mnemonicParsing="false" onAction="#click3" prefHeight="33.0" prefWidth="350.0" text="Управление информацией о растениях" />
+        <Button fx:id="manageEmployeesButton" minHeight="17.0" mnemonicParsing="false" onAction="#click4" prefHeight="32.0" prefWidth="350.0" text="Управление инф. о служащих парка" />
+        <Button fx:id="manageDecoratorsButton" minHeight="17.0" mnemonicParsing="false" onAction="#click5" prefHeight="34.0" prefWidth="350.0" text="Управление инф. о декораторах парка" />
+        <Button fx:id="searchPlantsByTypeButton" minHeight="17.0" mnemonicParsing="false" onAction="#click6" prefHeight="34.0" prefWidth="350.0" text="Просмотр информации о насаждениях" />
+        <Button fx:id="searchEmplAndDecorButton" minHeight="17.0" mnemonicParsing="false" onAction="#click7" prefHeight="34.0" prefWidth="350.0" text="Просмотр списка сотрудников по дате" />
+        <Button fx:id="searchPlantByNameButton" minHeight="17.0" mnemonicParsing="false" onAction="#click8" prefHeight="35.0" prefWidth="350.0" text="Просмотр инф. о растениях и плану полива" />
+      </children>
+    </VBox>
+    <Button fx:id="exitButton" layoutX="157.0" layoutY="437.0" mnemonicParsing="false" onAction="#click9" prefHeight="32.0" prefWidth="165.0" text="Выход" />
+      <ImageView fitHeight="93.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/HP/Pictures/1421227879_dobro-pozhalovat-domoy.png" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>

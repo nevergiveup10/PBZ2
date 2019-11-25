@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DecoratorsDialogController">
+   <children>
+      <TableView fx:id="table" layoutX="33.0" layoutY="39.0" prefHeight="200.0" prefWidth="1011.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col2" prefWidth="103.0" text="ФИО" />
+            <TableColumn fx:id="col3" prefWidth="106.0" text="Тел. номер" />
+            <TableColumn fx:id="col4" prefWidth="147.0" text="Адрес" />
+            <TableColumn fx:id="col5" minWidth="0.0" prefWidth="134.0" text="Специальность" />
+            <TableColumn fx:id="col6" prefWidth="169.0" text="Место обучения" />
+            <TableColumn fx:id="col7" prefWidth="150.0" text="Уровень образования" />
+            <TableColumn fx:id="col8" prefWidth="126.0" text="Рассписание" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fullName" layoutX="33.0" layoutY="276.0" prefHeight="31.0" prefWidth="170.0" text="ФИО" />
+      <TextField fx:id="number" layoutX="203.0" layoutY="276.0" prefHeight="31.0" prefWidth="157.0" text="Тел. номер" />
+      <TextField fx:id="address" layoutX="360.0" layoutY="276.0" prefHeight="31.0" prefWidth="119.0" text="Адрес" />
+      <TextField fx:id="specialty" layoutX="479.0" layoutY="276.0" prefHeight="31.0" prefWidth="119.0" text="Специальность" />
+      <TextField fx:id="studyPlace" layoutX="598.0" layoutY="276.0" prefHeight="31.0" prefWidth="135.0" text="Место обучения" />
+      <TextField fx:id="educationLevel" layoutX="733.0" layoutY="276.0" prefHeight="31.0" prefWidth="148.0" text="Уровень обр." />
+      <TextField fx:id="schedule" layoutX="881.0" layoutY="276.0" prefHeight="31.0" prefWidth="85.0" text="Расписание" />
+      <TextField fx:id="idDel" layoutX="694.0" layoutY="325.0" text="ID" />
+      <Button layoutX="894.0" layoutY="325.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="157.0" text="Удалить" />
+      <Button layoutX="966.0" layoutY="276.0" mnemonicParsing="false" onAction="#saveTable" prefHeight="31.0" prefWidth="93.0" text="Добавить" />
+   </children>
+</AnchorPane>
